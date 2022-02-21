@@ -6,318 +6,302 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!--    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
     <title>AGRO</title>
 </head>
 
-<body>
-    <header class="top-bar">
-        <div class="top-bar__bg"></div>
-        <div class="container-fluid">
-            <div>
-                <a class="top-bar-logo-wrapper" href="#">
-                    <img class="top-bar-logo" src="img/site_logo.png" width="70" height="90"
-                        alt="логотип компании АГРО">
-                </a>
-                <button class="top-bar__navigation-toggler top-bar__navigation-toggler--light"></button>
-                <div id="top-bar__inner" class="top-bar__inner visually-hidden">
-                    <div>
-                        <nav id="top-bar__navigation" class="top-bar__navigation navigation" role="navigation">
-                            <ul>
-                                <li class="active has-submenu">
-                                    <a href="#">Home</a>
-                                </li>
-
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
-
-                                <li class="has-submenu">
-                                    <a href="#">Pages</a>
-                                </li>
-
-                                <li class="has-submenu">
-                                    <a href="#">Shop</a>
-                                </li>
-
-                                <li>
-                                    <a href="blog.html">Blog</a>
-                                </li>
-
-                                <li>
-                                    <a href="contacts.html">Contacts</a>
-                                </li>
-
-                                <li class="li-btn">
-                                    <a class="btn btn--small" href="#">Get in Touch</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+<body class="body">
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="header-wrapper container-fluid">
+            <a class="header-logo-wrapper" href="#">
+                <img class="header-logo" src="img/site_logo.png" alt="логотип компании АГРО">
+            </a>
+            <button class="header-toggle" type="button">
+                <span></span>
+            </button>
+            <nav class="header-navigation">
+                <ul class="header-navigation-list">
+                    <li class="header-navigation-item active">
+                        <a class="header-navigation-item-link" href="#">Home</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a class="header-navigation-item-link" href="#">About</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a class="header-navigation-item-link" href="#">Pages</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a class="header-navigation-item-link" href="#">Shop</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a class="header-navigation-item-link" href="#">Blog</a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a class="header-navigation-item-link" href="#">Contacts</a>
+                    </li>
+                    <li class="li-btn">
+                        <a class="btn btn--small header-navigation-btn" href="#">Get in Touch</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <main class="main">
+        <h1 class="visually-hidden">AGRO - главная страница агрохолдинга</h1>
+        <section class="start-screen" id="start">
+            <div class="start-screen-overlay"></div>
+            <div class="container">
+                <div class="start-screen-content">
+                    <div class="start-screen-content-wrapper">
+                        <h2 class="start-screen-title">AGRO</h2>
+                        <p class="start-screen-title-1">Farming company</p>
+                        <p class="start-screen-title-2">
+                            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+                            opposed
+                            to using 'Content here, content here', making it look like readable English
+                        </p>
+                        <p class="start-screen-btn-wrapper">
+                            <a class="start-screen-btn btn btn--big" href="#">Discover</a>
+                        </p>
 
-    <section class="start-screen">
-        <div class="start-screen-overlay"></div>
-        <div class="container">
-            <div class="start-screen-content">
-                <div class="start-screen-content-wrapper">
-                    <h2 class="start-screen-title">AGRO</h2>
-                    <p class="start-screen-title-1">Farming company</p>
-                    <p class="start-screen-title-2">
-                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-                        opposed
-                        to using 'Content here, content here', making it look like readable English
-                    </p>
-                    <p class="start-screen-btn-wrapper">
-                        <a class="start-screen-btn btn btn--big" href="#">Discover</a>
-                    </p>
-
+                    </div>
                 </div>
             </div>
-        </div>
-        <span class="scroll-discover"></span>
-    </section>
-
-    <section class="special-offers section">
-        <div class="container">
-            <div class="section-heading section-heading--center">
-                <h2>Special <span>Offers</span></h2>
-                <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
-                    looks reasonable.</p>
+            <span class="scroll-discover"></span>
+        </section>
+        <section class="special-offers section">
+            <div class="container">
+                <div class="section-heading section-heading--center">
+                    <h2>Special <span>Offers</span></h2>
+                    <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+                        looks reasonable.</p>
+                </div>
+                <ul class="special-offers-list">
+                    <li class="special-offers-item">
+                        <div class="special-offer-img-wrapper">
+                            <img class="special-offer-img" src="img/1.png" width="71" height="56" alt="Farm Livestock">
+                        </div>
+                        <h3 class="special-offer-title">Farm Livestock</h3>
+                    </li>
+                    <li class="special-offers-item">
+                        <div class="special-offer-img-wrapper">
+                            <img class="special-offer-img" src="img/2.png" width="44" height="62" alt="Farm Livestock">
+                        </div>
+                        <h3 class="special-offer-title">Garden Tillage</h3>
+                    </li>
+                    <li class="special-offers-item">
+                        <div class="special-offer-img-wrapper">
+                            <img class="special-offer-img" src="img/3.png" width="58" height="60" alt="Farm Livestock">
+                        </div>
+                        <h3 class="special-offer-title">Fresh Fruits</h3>
+                    </li>
+                    <li class="special-offers-item">
+                        <div class="special-offer-img-wrapper">
+                            <img class="special-offer-img" src="img/4.png" width="48" height="59" alt="Farm Livestock">
+                        </div>
+                        <h3 class="special-offer-title">Fresh Fruits</h3>
+                    </li>
+                    <li class="special-offers-item">
+                        <div class="special-offer-img-wrapper">
+                            <img class="special-offer-img" src="img/5.png" width="48" height="66" alt="Farm Livestock">
+                        </div>
+                        <h3 class="special-offer-title">Awesome Wheats</h3>
+                    </li>
+                    <li class="special-offers-item">
+                        <div class="special-offer-img-wrapper">
+                            <img class="special-offer-img" src="img/6.png" width="70" height="55" alt="Farm Livestock">
+                        </div>
+                        <h3 class="special-offer-title">Agro Machinery</h3>
+                    </li>
+                </ul>
             </div>
-            <ul class="special-offers-list">
-                <li class="special-offers-item">
-                    <div class="special-offer-img-wrapper">
-                        <img class="special-offer-img" src="img/1.png" width="71" height="56" alt="Farm Livestock">
-                    </div>
-                    <h3 class="special-offer-title">Farm Livestock</h3>
-                </li>
-                <li class="special-offers-item">
-                    <div class="special-offer-img-wrapper">
-                        <img class="special-offer-img" src="img/2.png" width="44" height="62" alt="Farm Livestock">
-                    </div>
-                    <h3 class="special-offer-title">Garden Tillage</h3>
-                </li>
-                <li class="special-offers-item">
-                    <div class="special-offer-img-wrapper">
-                        <img class="special-offer-img" src="img/3.png" width="58" height="60" alt="Farm Livestock">
-                    </div>
-                    <h3 class="special-offer-title">Fresh Fruits</h3>
-                </li>
-                <li class="special-offers-item">
-                    <div class="special-offer-img-wrapper">
-                        <img class="special-offer-img" src="img/4.png" width="48" height="59" alt="Farm Livestock">
-                    </div>
-                    <h3 class="special-offer-title">Fresh Fruits</h3>
-                </li>
-                <li class="special-offers-item">
-                    <div class="special-offer-img-wrapper">
-                        <img class="special-offer-img" src="img/5.png" width="48" height="66" alt="Farm Livestock">
-                    </div>
-                    <h3 class="special-offer-title">Awesome Wheats</h3>
-                </li>
-                <li class="special-offers-item">
-                    <div class="special-offer-img-wrapper">
-                        <img class="special-offer-img" src="img/6.png" width="70" height="55" alt="Farm Livestock">
-                    </div>
-                    <h3 class="special-offer-title">Agro Machinery</h3>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="promo container">
-        <div>
-            <h2 class="promo-title">Special products for most people</h2>
-        </div>
-    </section>
-    <section class="about section">
-        <div class="container about-wrapper">
-            <div class="section-heading about-wrapper-item">
-                <h2>About agro <span>farm company</span></h2>
-                <p>
-                    <a class="btn btn--medium about-btn--top" href="#">More about</a>
-                </p>
+        </section>
+        <section class="promo container">
+            <div>
+                <h2 class="promo-title">Special products for most people</h2>
             </div>
-            <div class="about-img-wrapper about-wrapper-item">
-                <img src="img/about.png" width="504" height="424" alt="зерно">
-            </div>
-            <div class="about-content about-wrapper-item">
-                <p>
-                    Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
-                    looks reasonable.
-                </p>
-                <p>
-                    The generated Lorem Ipsum is therefore always free from repetition injected humour, or
-                    non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It
-                    has roots in a piece of classi
-                </p>
-                <p>
-                    <a class="btn btn--medium about-btn--bottom" href="#">More about</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="results section">
-        <div class="container">
-            <ul class="results-list">
-                <li class="results-item">
-                    <div class="results-img-wrapper">
-                        <img src="img/results/1.png" width="67" height="68" alt="пшеница">
-                    </div>
-                    <div>
-                        <p class="results-number">19500</p>
-                        <p class="results-name">Tons of harvesta</p>
-                    </div>
-                </li>
-                <li class="results-item">
-                    <div class="results-img-wrapper">
-                        <img src="img/results/2.png" width="75" height="61" alt="корова">
-                    </div>
-                    <div>
-                        <p class="results-number">2720</p>
-                        <p class="results-name">Units of Cattle</p>
-                    </div>
-                </li>
-                <li class="results-item">
-                    <div class="results-img-wrapper">
-                        <img src="img/results/3.png" width="65" height="60" alt="ферма">
-                    </div>
-                    <div>
-                        <p class="results-number">10000</p>
-                        <p class="results-name">Hectares of farm</p>
-                    </div>
-                </li>
-                <li class="results-item">
-                    <div class="results-img-wrapper">
-                        <img src="img/results/4.png" width="78" height="70" alt="трактор">
-                    </div>
-                    <div>
-                        <p class="results-number">128</p>
-                        <p class="results-name">Units of technic</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="products section container-fluid">
-        <div class="products-wrapper">
-            <div class="products-item products-item--text products-item--1">
-                <div class="products-heading">
-                    <h2 class="products-title">agro <span>products</span></h2>
+        </section>
+        <section class="about section">
+            <div class="container about-wrapper">
+                <div class="section-heading about-wrapper-item">
+                    <h2>About agro <span>farm company</span></h2>
+                    <p>
+                        <a class="btn btn--medium about-btn--top" href="#">More about</a>
+                    </p>
+                </div>
+                <div class="about-img-wrapper about-wrapper-item">
+                    <img src="img/about.png" width="504" height="424" alt="зерно">
+                </div>
+                <div class="about-content about-wrapper-item">
                     <p>
                         Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
-                        looks
-                        reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour,
-                        or
-                        non-characteristic words etc.
+                        looks reasonable.
                     </p>
-
                     <p>
-                        <a class="btn btn--medium" href="#">all products</a>
+                        The generated Lorem Ipsum is therefore always free from repetition injected humour, or
+                        non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classi
+                    </p>
+                    <p>
+                        <a class="btn btn--medium about-btn--bottom" href="#">More about</a>
                     </p>
                 </div>
             </div>
-            <div class="products-item products-item--2">
-                <div class="product-image-wrapper">
-                    <img class="product-image" src="img/products/1.jpg" width="500" height="333" alt="черника">
-                </div>
-                <div class="product-content">
-                    <h3>fruits</h3>
-                </div>
-                <a class="product-link" href="#"></a>
+        </section>
+        <section class="results section">
+            <div class="container">
+                <ul class="results-list">
+                    <li class="results-item">
+                        <div class="results-img-wrapper">
+                            <img src="img/results/1.png" width="67" height="68" alt="пшеница">
+                        </div>
+                        <div>
+                            <p class="results-number">19500</p>
+                            <p class="results-name">Tons of harvesta</p>
+                        </div>
+                    </li>
+                    <li class="results-item">
+                        <div class="results-img-wrapper">
+                            <img src="img/results/2.png" width="75" height="61" alt="корова">
+                        </div>
+                        <div>
+                            <p class="results-number">2720</p>
+                            <p class="results-name">Units of Cattle</p>
+                        </div>
+                    </li>
+                    <li class="results-item">
+                        <div class="results-img-wrapper">
+                            <img src="img/results/3.png" width="65" height="60" alt="ферма">
+                        </div>
+                        <div>
+                            <p class="results-number">10000</p>
+                            <p class="results-name">Hectares of farm</p>
+                        </div>
+                    </li>
+                    <li class="results-item">
+                        <div class="results-img-wrapper">
+                            <img src="img/results/4.png" width="78" height="70" alt="трактор">
+                        </div>
+                        <div>
+                            <p class="results-number">128</p>
+                            <p class="results-name">Units of technic</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="products-item products-item--3">
-                <div class="product-image-wrapper">
-                    <img class="product-image" src="img/products/2.jpg" width="466" height="333" alt="горошек">
-                </div>
-                <div class="product-content">
-                    <h3>Vegatables</h3>
-                </div>
-                <a class="product-link" href="#"></a>
-            </div>
-            <div class="products-item products-item--4">
-                <div class="product-image-wrapper">
-                    <img class="product-image" src="img/products/3.jpg" width="502" height="335" alt="коровы">
-                </div>
-                <div class="product-content">
-                    <h3>livestock</h3>
-                </div>
-                <a class="product-link" href="#"></a>
-            </div>
-            <div class="products-item products-item--5">
-                <div class="product-image-wrapper">
-                    <img class="product-image" src="img/products/4.jpg" width="606" height="375" alt="подсолнухи">
-                </div>
-                <div class="product-content">
-                    <h3>Sunflowers</h3>
-                </div>
-                <a class="product-link" href="#"></a>
-            </div>
-            <div class="products-item products-item--6">
-                <div class="product-content">
-                    <h3><b>12</b>Type of <br>products</h3>
-                </div>
-                <a class="product-link" href="#"></a>
-            </div>
-            <div class="products-item products-item--7">
-                <div class="product-image-wrapper">
-                    <img class="product-image" src="img/products/5.jpg" width="865" height="470" alt="пшеница">
-                </div>
-                <div class="product-content">
-                    <h3>wheat</h3>
-                </div>
-                <a class="product-link" href="#"></a>
-            </div>
-            <div class="products-item products-item--8">
-                <div class="product-image-wrapper">
-                    <img class="product-image" src="img/products/6.jpg" width="460" height="528" alt="специи">
-                </div>
-                <div class="product-content">
-                    <h3>spices</h3>
-                </div>
-                <a class="product-link" href="#"></a>
-            </div>
-        </div>
+        </section>
+        <section class="products section container-fluid">
+            <div class="products-wrapper">
+                <div class="products-item products-item--text products-item--1">
+                    <div class="products-heading">
+                        <h2 class="products-title">agro <span>products</span></h2>
+                        <p>
+                            Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+                            looks
+                            reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour,
+                            or
+                            non-characteristic words etc.
+                        </p>
 
-
-    </section>
-
-    <section class="contact section">
-        <div class="container">
-            <div class="section-heading section-heading--center">
-                <h2 class="contact-title">Get <span>in touch</span></h2>
-
-                <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
-                    looks reasonable.</p>
-            </div>
-
-            <form class="contact-form">
-                <div class="form-user-data-wrap">
-                    <div class="form-name">
-                        <input class="form-input" name="name" type="text" placeholder="Name">
-                    </div>
-                    <div class="form-email">
-                        <input class="form-input" name="email" type="text" placeholder="E-mail">
+                        <p>
+                            <a class="btn btn--medium" href="#start">all products</a>
+                        </p>
                     </div>
                 </div>
+                <div class="products-item products-item--2">
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="img/products/1.jpg" width="500" height="333" alt="черника">
+                    </div>
+                    <div class="product-content">
+                        <h3>fruits</h3>
+                    </div>
+                    <a class="product-link" href="#start"></a>
+                </div>
+                <div class="products-item products-item--3">
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="img/products/2.jpg" width="466" height="333" alt="горошек">
+                    </div>
+                    <div class="product-content">
+                        <h3>Vegatables</h3>
+                    </div>
+                    <a class="product-link" href="#start"></a>
+                </div>
+                <div class="products-item products-item--4">
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="img/products/3.jpg" width="502" height="335" alt="коровы">
+                    </div>
+                    <div class="product-content">
+                        <h3>livestock</h3>
+                    </div>
+                    <a class="product-link" href="#start"></a>
+                </div>
+                <div class="products-item products-item--5">
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="img/products/4.jpg" width="606" height="375" alt="подсолнухи">
+                    </div>
+                    <div class="product-content">
+                        <h3>Sunflowers</h3>
+                    </div>
+                    <a class="product-link" href="#start"></a>
+                </div>
+                <div class="products-item products-item--6">
+                    <div class="product-content">
+                        <h3><b>12</b>Type of <br>products</h3>
+                    </div>
+                    <a class="product-link" href="#start"></a>
+                </div>
+                <div class="products-item products-item--7">
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="img/products/5.jpg" width="865" height="470" alt="пшеница">
+                    </div>
+                    <div class="product-content">
+                        <h3>wheat</h3>
+                    </div>
+                    <a class="product-link" href="#start"></a>
+                </div>
+                <div class="products-item products-item--8">
+                    <div class="product-image-wrapper">
+                        <img class="product-image" src="img/products/6.jpg" width="460" height="528" alt="специи">
+                    </div>
+                    <div class="product-content">
+                        <h3>spices</h3>
+                    </div>
+                    <a class="product-link" href="#start"></a>
+                </div>
+            </div>
+        </section>
+        <section class="contact section">
+            <div class="container">
+                <div class="section-heading section-heading--center">
+                    <h2 class="contact-title">Get <span>in touch</span></h2>
 
-                <textarea class="form-input form-input--textarea" name="message" placeholder="Comments"></textarea>
-                <button class="form-btn btn btn--medium" type="submit" role="button">Send</button>
-            </form>
-        </div>
-    </section>
-    <section class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d288110.85252319684!2d37.01631438141934!3d55.656538961992716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zZ29vZ2xlbWFwINCx0LDQvdC6INCw0LLQsNC90LPQsNGA0LQ!5e0!3m2!1sru!2sru!4v1645271851892!5m2!1sru!2sru"
-            width="100%" height="255" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <div class="map-fade"></div>
+                    <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which
+                        looks reasonable.</p>
+                </div>
 
-    </section>
+                <form class="contact-form">
+                    <div class="form-user-data-wrap">
+                        <div class="form-name">
+                            <input class="form-input" name="name" type="text" placeholder="Name">
+                        </div>
+                        <div class="form-email">
+                            <input class="form-input" name="email" type="text" placeholder="E-mail">
+                        </div>
+                    </div>
+
+                    <textarea class="form-input form-input--textarea" name="message" placeholder="Comments"></textarea>
+                    <button class="form-btn btn btn--medium" type="submit" role="button">Send</button>
+                </form>
+            </div>
+        </section>
+        <section class="map">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d288110.85252319684!2d37.01631438141934!3d55.656538961992716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zZ29vZ2xlbWFwINCx0LDQvdC6INCw0LLQsNC90LPQsNGA0LQ!5e0!3m2!1sru!2sru!4v1645271851892!5m2!1sru!2sru"
+                    width="100%" height="255" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-fade"></div>
+        </section>
+    </main>
 
     <footer class="footer container">
         <div class="footer-wrapper">
@@ -369,7 +353,6 @@
                     </li>
                 </ul>
             </div>
-            <!-- </div> -->
 
             <div class="footer-form-wrapper">
                 <p class="footer-form-title">Get a newslatter</p>
@@ -393,12 +376,6 @@
             </ul>
         </nav>
     </footer>
-
-
-
-
-
-
+<script src="js/nav.js"></script>
 </body>
-
 </html>

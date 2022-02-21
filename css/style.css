@@ -1153,6 +1153,11 @@ input .form-input {
     display: flex;
     width: 100%;
 }
+.footer-form-input-wrapper {
+    padding-right: 20px;
+    flex-grow: 1;
+}
+
 .footer-form-input {
     font-family: "Open Sans",sans-serif;
     font-weight: 500;
@@ -1164,9 +1169,7 @@ input .form-input {
     background: transparent;
     border: none;
     border-bottom: 1px solid #dadada;
-    flex-grow: 1;
-    padding-right: 20px;
-    margin-right: 20px;
+   
     height: 44px;
 }
 

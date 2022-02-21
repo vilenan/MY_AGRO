@@ -439,16 +439,10 @@ html {
     }
 }
 
-
 .header-navigation-btn:hover {
     background-color: transparent;
     color: #fff;
 }
-
-
-
-
-
 
 .start-screen {
     background-image: url("../img/slide-item-1.jpg");

@@ -1052,24 +1052,16 @@ input .form-input {
 .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
-}
-
-@media (min-width: 992px) {
-    .footer-wrapper {
-        flex-wrap: nowrap;
-    }
 }
 
 .footer-logo {
-    display: block;
     margin-bottom: 40px;
-    width: 100%;
+    flex: 1 100%;
 }
 
 @media (min-width: 576px){
     .footer-logo {
-        width: auto;
+        flex: 0 auto;
     }
 }
 @media (min-width: 768px) {
@@ -1082,29 +1074,43 @@ input .form-input {
     display: block;
 }
 
+.footer-content {
+    flex: 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media (min-width: 576px){
     .footer-content {
-        flex-grow: 1;
+        flex: 1 0%;
+        padding-left: 30px;
+        align-items: center;
         }
 }
-
 @media (min-width: 768px){
     .footer-content {
-        display: flex;
+        flex: 1;
+        padding-left: 30px;
+        align-items: center;
     }
-}
-
-.footer-socials {
-    display: flex;
-    margin-bottom: 40px;
-    color: #ccc;
 }
 
 .footer-address {
     line-height: 1.6;
     font-style: normal;
     margin-bottom: 40px;
-    flex-grow: 1;
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .footer-address {
+        width: auto;
+        flex: 1 0 0;
+    }
+}
+
+.footer-address a {
+    text-decoration: underline;
 }
 .footer-address p {
     margin-top: 10px;
@@ -1118,19 +1124,33 @@ input .form-input {
 .footer-address p:last-child {
     margin-bottom: 0;
 }
+
+.footer-socials {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+@media (min-width: 768px){
+    .footer-socials {
+        width: auto;
+    }
+}
+
 .footer-form-wrapper {
     margin-bottom: 40px;
-    width: 100%;
+    flex: 1 100%;
 }
 @media (min-width: 992px) {
     .footer-form-wrapper {
-        width: 41.66%;
+        padding-left: 30px;
+        flex: 0 41.66%;
     }
 }
 
 @media (min-width: 1200px) {
     .footer-form-wrapper {
-        width: 33.33%;
+        flex: 0 33.33%;
     }
 }
 
@@ -1143,11 +1163,21 @@ input .form-input {
     color: #333;
     margin-bottom: 20px;
 }
+
 .footer-form {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
+
+.footer-form-input-wrapper {
+    padding-right: 20px;
+    flex: 1;
+    line-height: 1;
+}
+
 .footer-form-input {
+    width: 100%;
     font-family: "Open Sans",sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -1158,21 +1188,17 @@ input .form-input {
     background: transparent;
     border: none;
     border-bottom: 1px solid #dadada;
-    flex-grow: 1;
-    padding-right: 20px;
-    margin-right: 20px;
     height: 44px;
 }
 
-.footer-navigation {
+.footer-navigation ul{
     margin-bottom: 40px;
-    margin-right: -35px;
-    display: flex;
-    flex-wrap: wrap;
 }
-@media(min-width: 992px){
-    .footer-navigation {
+@media(min-width: 768px){
+    .footer-navigation ul {
+        display: flex;
         justify-content: end;
+        margin-right: -35px;
     }
 }
 .footer-navigation-item {
@@ -1187,6 +1213,7 @@ input .form-input {
     letter-spacing: 0;
     white-space: normal;
 }
+
 .footer-link {
     color: inherit;
 }
@@ -1211,9 +1238,9 @@ input .form-input {
     background-color: #fcdb5a;
     opacity: 0;
     visibility: hidden;
-    transition: left .3s ease-in-out,width .3s ease-in-out,opacity .3s ease-in-out,visibility .3s ease-in-out;      
+    transition: left .3s ease-in-out,width .3s ease-in-out,opacity .3s ease-in-out,visibility .3s ease-in-out;
 }
-.footer-navigation-item.active>.footer-navigation-link::after, 
+.footer-navigation-item.active>.footer-navigation-link::after,
 .footer-navigation-item:hover>.footer-navigation-link::after {
     left: 0;
     width: 100%;
@@ -1229,22 +1256,3 @@ input .form-input {
 .social-link:hover svg{
     fill: #fcdb5a;
 }
-
-
-/*@media (max-width: $desktop-width-only) {*/
-/*&--nojs {*/
-/*    position: static;*/
-/*    background-color: $color-main;*/
-/*    background-image: none;*/
-/*}*/
-
-/*&--nav-opened {*/
-/*     background-image: none;*/
-/*     background-color: $color-main;*/
-/* }*/
-
-/*&--nav-closed .header__nav-list {*/
-/*     display: none;*/
-/* }*/
-/*}*/
-/*}*/
